@@ -1,0 +1,95 @@
+<!--written by Phillip Smith-->
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="surveystyle.css">
+</head>
+
+<body>
+	<h1 id="title">Personality Survey</h1>
+	<div id="form-container">
+		<p id="description">Tell us about yourself</p>
+		<form id="survey-form">
+			<div class="leftElement">
+				<div class="label">
+					<label id="name-label" for="name">*Name: </label>
+				</div>
+				<div class="rightElement">
+					<input autofocus type="text" name="name" id="name" class="input-box" placeholder="Enter your name" required>
+				</div>
+			</div>
+			<div class="leftElement">
+				<div class="label">
+					<label id="email-label" for="email">*E-Mail: </label>
+				</div>
+				<div class="rightElement">
+					<input type="email" name="email" id="email" class="input-box" placeholder="Enter your Email" required>
+				</div>
+			</div>
+			<div class="leftElement">
+				<div class="label">
+					<label id="number-label" for="number"></>*Age: </label>
+				</div>
+				<div class="rightElement">
+					<input type="number" name="age" id="number" min="15" max="85" class="input-field" placeholder="Age" required>
+				</div>
+			</div>
+			<div class="leftElement">
+				<div class="label">
+					<label id="movie">What is your favorite movie?</label>
+				</div>
+				<div class="rightElement">
+					<select id="dropdown" name="movie" class="dropdown">
+						<option disabled selected value>Select a Movie</option>
+						<option value="battleg">Dragon Ball Super: Battle of the Gods</option>
+						<option value="rezf">Dragon Ball Super: Resurection F</option>
+						<option value="broly">Dragon Ball Super: Broly</option>
+						<option value="spiderman">Spider-Man: Into the Spiderverse</option>
+						<option value="noChoice">Can't Choose</option>
+					</select>
+				</div>
+			</div>
+			<div class="leftElement">
+				<div class="label">
+					<label for="animeWatch">* How much Anime would you say you watch weekly?</label>
+				</div>
+				<div class="rightElement">
+					<ul style="list-style: none;">
+						<li class="radio"><label>Dude, I binge whole seasons weekly<input name="rad-button" value="1"  type="radio" class="animeWatch" ></label></li>
+						<li class="radio"><label>I watch episodes of my favorites weekly<input name="rad-button" value="2"  type="radio" class="animeWatch" ></label></li>
+						<li class="radio"><label>If it is on I will watch<input name="rad-button" value="3"  type="radio" class="animeWatch" ></label></li>
+					</ul>
+				</div>
+			</div>	
+			<div class="leftElement">
+				<div class="label">
+					<label for="shows">Which Animes do you enjoy watching?</label>
+				</div>
+				<div class="rightElement">
+					<ul id="shows" style="list-style: none;">
+						<li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="shows">Dragon Ball Super</label></li>
+						<li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="shows">My Hero Academia</li>
+						<li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="shows">Samurai Champloo</label></li>
+						<li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="shows">Cowboy Bebop</label></li>
+						<li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="shows">Yu Yu Hakasho</label></li>
+						<li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="shows">One Punch Man</label></li>
+						<li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="shows">Trigun</label></li>
+						<li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="shows"></label>D. Gray Man</li>
+					</ul>
+				</div>
+			</div>	
+			<div class="leftElement">
+				<div class="label">
+					<label for="comments">Please use this space to give us additional comments:</label>
+				</div>
+				<div class="rightElement">
+					<textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder= "Type here..."></textarea>
+				</div>
+			</div>	
+			<button id="submit" type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+/*written by Phillip Smith*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins|Ubuntu');
+
+/*fonts: 
+
+    font-family: 'Ubuntu', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+
+*/
+
+body {
+	text-align: center;
+	background-color: #01FF70;
+	font-family: 'Ubuntu', sans-serif;
+	min-width: 300px;
+}
+
+#title {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
+
+#form-container {
+	padding: 10px;
+	padding-top: 20px;
+	background-color: #DDDDDD;
+	margin: 0 auto;
+	border: 0px solid;
+	border-radius: 5px;
+	width: 75%;
+	max-width: 900px;
+}
+
+.label {
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.rightElement {
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin: auto;
+}
+
+.input-box {
+  height: 20px;
+  width: 200px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #7FDBFF;
+  border-radius: 2px;
+}
+
+.dropdown {  
+  margin-top: 15px;
+  border: 1px solid #7FDBFF;
+  border-radius: 2px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
+
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+#number {
+  width: 40px;
+}
+
+.animeWatch,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+form {
+	overflow: hidden;
+}
